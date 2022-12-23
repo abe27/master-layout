@@ -1,5 +1,4 @@
-import ImageUrl from "./ImageUrl";
-import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
+import { Avatar } from "@chakra-ui/react";
 
 const Notification = () => {
   return (

@@ -8,7 +8,7 @@ const ImageUrl = (props) => {
   return (
     <Image
       loader={myLoader}
-      src="people"
+      src="animals"
       alt="Picture of the author"
       width={80}
       height={80}

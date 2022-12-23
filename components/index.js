@@ -4,5 +4,6 @@ import ImageUrl from "./ImageUrl";
 import InputSearch from "./InputSearch";
 import Notification from "./Notification"
 import UserPopper from "./UserPopper";
+import BreadcrumbBar from "./BreadcrumbBar"
 
-export { Header, NavBar, ImageUrl, UserPopper, InputSearch, Notification };
+export { Header, NavBar, ImageUrl, UserPopper, InputSearch, Notification,BreadcrumbBar };

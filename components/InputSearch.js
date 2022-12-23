@@ -4,7 +4,7 @@ const InputSearch = () => {
       <input
         type="text"
         placeholder="Search"
-        className="input input-bordered input-sm"
+        className="input input-bordered input-sm w-48"
       />
     </div>
   );

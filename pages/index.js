@@ -1,5 +1,5 @@
 import { MainLayout } from "../layouts";
-import { TableEmployeeList } from "../components";
+import { ImageUrl, TableEmployeeList } from "../components";
 import { Grid, GridItem } from "@chakra-ui/react";
 const IndexPage = () => {
   return (

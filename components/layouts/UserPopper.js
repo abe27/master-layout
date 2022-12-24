@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ImageUrl from "./ImageUrl";
 
 const UserPopper = () => {
@@ -13,16 +14,13 @@ const UserPopper = () => {
         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
       >
         <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
+          <Link href={`/profile`}>Profile</Link>
         </li>
         <li>
-          <a>Settings</a>
+          <Link href={`/settings`}>Settings</Link>
         </li>
         <li>
-          <a>Logout</a>
+          <Link href={`/auth`}>Logout</Link>
         </li>
       </ul>
     </div>

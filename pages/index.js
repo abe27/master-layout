@@ -4,7 +4,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 const IndexPage = () => {
   return (
     <MainLayout title={"Test LayOut"} description={"Test Description"}>
-      <div className="">
+      <div className="mt-4">
         <Grid
           templateRows="repeat(2, 1fr)"
           templateColumns="repeat(5, 1fr)"

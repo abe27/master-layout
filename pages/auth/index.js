@@ -53,6 +53,7 @@ const AuthPage = () => {
       })
     }
   };
+
   return (
     <>
       <Header title="Auth Page" description="เข้าสู่ระบบ" />

@@ -1,4 +1,3 @@
-import Header from "./layouts/Header";
 import NavBar from "./layouts/NavBar";
 import ImageUrl from "./layouts/ImageUrl";
 import InputSearch from "./layouts/InputSearch";
@@ -7,6 +6,7 @@ import UserPopper from "./layouts/UserPopper";
 import BreadcrumbBar from "./layouts/BreadcrumbBar";
 
 // Import from element
+import Header from "./elements/Header";
 import TableEmployeeList from "./elements/TableEmployeeList";
 
 export {

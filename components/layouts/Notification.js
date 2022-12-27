@@ -7,7 +7,7 @@ const Notification = () => {
         <div className="indicator">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="w-5 h-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -26,83 +26,83 @@ const Notification = () => {
       </label>
       <div
         tabIndex={0}
-        className="mt-3 card card-compact dropdown-content w-auto bg-base-100 shadow"
+        className="w-auto mt-3 shadow card card-compact dropdown-content bg-base-100"
       >
         <div className="card-body">
-          <div class="container flex flex-col items-center justify-center w-full mx-auto">
-            <ul class="flex flex-col divide-y divide w-72">
-              <li class="flex flex-row">
-                <div class="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div class="flex flex-col items-center justify-center mr-4">
+          <div className="container flex flex-col items-center justify-center w-full mx-auto">
+            <ul className="flex flex-col divide-y divide w-72">
+              <li className="flex flex-row">
+                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                  <div className="flex flex-col items-center justify-center mr-4">
                     <Avatar
                       name="Dan Abrahmov"
                       src="https://bit.ly/dan-abramov"
                     />
                   </div>
-                  <div class="flex-1 pl-1 mr-16">
-                    <div class="font-medium dark:text-white">Jean Marc</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-200">
+                  <div className="flex-1 pl-1 mr-16">
+                    <div className="font-medium dark:text-white">Jean Marc</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-200">
                       Developer
                     </div>
                   </div>
-                  <div class="text-xs text-gray-600 dark:text-gray-200">
+                  <div className="text-xs text-gray-600 dark:text-gray-200">
                     6:00 AM
                   </div>
                 </div>
               </li>
-              <li class="flex flex-row">
-                <div class="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div class="flex flex-col items-center justify-center mr-4">
+              <li className="flex flex-row">
+                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                  <div className="flex flex-col items-center justify-center mr-4">
                     <Avatar
                       name="Kola Tioluwani"
                       src="https://bit.ly/tioluwani-kolawole"
                     />
                   </div>
-                  <div class="flex-1 pl-1 mr-16">
-                    <div class="font-medium dark:text-white">Designer</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-200">
+                  <div className="flex-1 pl-1 mr-16">
+                    <div className="font-medium dark:text-white">Designer</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-200">
                       Charlie Moi
                     </div>
                   </div>
-                  <div class="text-xs text-gray-600 dark:text-gray-200">
+                  <div className="text-xs text-gray-600 dark:text-gray-200">
                     6:00 AM
                   </div>
                 </div>
               </li>
-              <li class="flex flex-row">
-                <div class="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div class="flex flex-col items-center justify-center mr-4">
+              <li className="flex flex-row">
+                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                  <div className="flex flex-col items-center justify-center mr-4">
                     <Avatar
                       name="Kent Dodds"
                       src="https://bit.ly/kent-c-dodds"
                     />
                   </div>
-                  <div class="flex-1 pl-1 mr-16">
-                    <div class="font-medium dark:text-white">CEO</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-200">
+                  <div className="flex-1 pl-1 mr-16">
+                    <div className="font-medium dark:text-white">CEO</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-200">
                       Marine Jeanne
                     </div>
                   </div>
-                  <div class="text-xs text-gray-600 dark:text-gray-200">
+                  <div className="text-xs text-gray-600 dark:text-gray-200">
                     6:00 AM
                   </div>
                 </div>
               </li>
-              <li class="flex flex-row">
-                <div class="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div class="flex flex-col items-center justify-center mr-4">
+              <li className="flex flex-row">
+                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                  <div className="flex flex-col items-center justify-center mr-4">
                     <Avatar
                       name="Ryan Florence"
                       src="https://bit.ly/ryan-florence"
                     />
                   </div>
-                  <div class="flex-1 pl-1 mr-16">
-                    <div class="font-medium dark:text-white">CTO</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-200">
+                  <div className="flex-1 pl-1 mr-16">
+                    <div className="font-medium dark:text-white">CTO</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-200">
                       Boby PArk
                     </div>
                   </div>
-                  <div class="text-xs text-gray-600 dark:text-gray-200">
+                  <div className="text-xs text-gray-600 dark:text-gray-200">
                     6:00 AM
                   </div>
                 </div>

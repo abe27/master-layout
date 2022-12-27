@@ -1,13 +1,13 @@
 import { MainLayout } from "../../layouts";
 
-const ProfilePage = () => {
+const AdministratorPage = () => {
   return (
     <MainLayout title={"Profile Page"} description={"Profile Page Description"}>
       <div className="mt-4">
-        <h6>Test Profile Page</h6>
+        <h6>Test Administrator Page</h6>
       </div>
     </MainLayout>
   );
 };
 
-export default ProfilePage;
+export default AdministratorPage;

@@ -1,8 +1,58 @@
 /* eslint-disable @next/next/no-img-element */
 import { LockClosedIcon } from "@heroicons/react/20/solid";
+import { useToast } from '@chakra-ui/react'
 import { Header } from "../../components";
+import { useRouter } from "next/router";
 
 const AuthPage = () => {
+  const router = useRouter()
+  const toast = useToast()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // Get data from the form.
+    const data = {
+      username: e.target.username.value,
+      password: e.target.password.value,
+      remember: e.target.remember.value,
+    };
+    console.dir(data)
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(data)
+    // API endpoint where we send form data.
+    const endpoint = '/api/auth/login'
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSONdata,
+    }
+    const res = await fetch(endpoint, options)
+    const r = await res.json()
+    if (res.ok) {
+      toast({
+        title: 'Message Alert!',
+        description: r.message,
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+        position:"top"
+      })
+      router.push("/")
+    }
+
+    if (!res.ok) {
+      toast({
+        title: 'Message Alert!',
+        description: r.message,
+        status: 'error',
+        duration: 2000,
+        isClosable: true,
+        position:"top",
+        onCloseComplete: () => router.reload()
+      })
+    }
+  };
   return (
     <>
       <Header title="Auth Page" description="เข้าสู่ระบบ" />
@@ -27,21 +77,21 @@ const AuthPage = () => {
               </a>
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="/" method="POST">
+          <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
+                <label htmlFor="emp_code" className="sr-only">
+                  Employee Code
                 </label>
                 <input
-                  id="email-address"
-                  name="email"
+                  id="emp_code"
+                  name="username"
                   type="text"
-                  autoComplete="email"
+                  autoComplete="Employee Code"
                   required
                   className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none rounded-t-md focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Email address"
+                  placeholder="Employee Code"
                 />
               </div>
               <div>

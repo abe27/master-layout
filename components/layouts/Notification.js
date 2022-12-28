@@ -111,7 +111,7 @@ const Notification = () => {
                     <div className="flex-1 pl-1 mr-16">
                       <div className="font-medium dark:text-white">CTO</div>
                       <div className="text-sm text-gray-600 dark:text-gray-200">
-                        Boby PArk
+                        Boby Park
                       </div>
                     </div>
                     <div className="text-xs text-gray-600 dark:text-gray-200">

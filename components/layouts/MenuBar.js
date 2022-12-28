@@ -12,13 +12,18 @@ const MenuBar = () => {
         <span className="hover:text-gray-400">
           Documents
           <svg
-            className="text-gray-800 fill-current"
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            fill="none"
             viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
           >
-            <path d="M7.41,8.58L1/administrators2,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
           </svg>
         </span>
         <ul className="z-50 p-2 bg-base-100">

@@ -1,4 +1,5 @@
 import { Avatar } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Notification = () => {
   return (
@@ -32,80 +33,92 @@ const Notification = () => {
           <div className="container flex flex-col items-center justify-center w-full mx-auto">
             <ul className="flex flex-col divide-y divide w-72">
               <li className="flex flex-row">
-                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div className="flex flex-col items-center justify-center mr-4">
-                    <Avatar
-                      name="Dan Abrahmov"
-                      src="https://bit.ly/dan-abramov"
-                    />
-                  </div>
-                  <div className="flex-1 pl-1 mr-16">
-                    <div className="font-medium dark:text-white">Jean Marc</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
-                      Developer
+                <Link href="/messages">
+                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                    <div className="flex flex-col items-center justify-center mr-4">
+                      <Avatar
+                        name="Dan Abrahmov"
+                        src="https://bit.ly/dan-abramov"
+                      />
+                    </div>
+                    <div className="flex-1 pl-1 mr-16">
+                      <div className="font-medium dark:text-white">
+                        Jean Marc
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-200">
+                        Developer
+                      </div>
+                    </div>
+                    <div className="text-xs text-gray-600 dark:text-gray-200">
+                      6:00 AM
                     </div>
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-200">
-                    6:00 AM
-                  </div>
-                </div>
+                </Link>
               </li>
               <li className="flex flex-row">
-                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div className="flex flex-col items-center justify-center mr-4">
-                    <Avatar
-                      name="Kola Tioluwani"
-                      src="https://bit.ly/tioluwani-kolawole"
-                    />
-                  </div>
-                  <div className="flex-1 pl-1 mr-16">
-                    <div className="font-medium dark:text-white">Designer</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
-                      Charlie Moi
+                <Link href="/messages">
+                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                    <div className="flex flex-col items-center justify-center mr-4">
+                      <Avatar
+                        name="Kola Tioluwani"
+                        src="https://bit.ly/tioluwani-kolawole"
+                      />
+                    </div>
+                    <div className="flex-1 pl-1 mr-16">
+                      <div className="font-medium dark:text-white">
+                        Designer
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-200">
+                        Charlie Moi
+                      </div>
+                    </div>
+                    <div className="text-xs text-gray-600 dark:text-gray-200">
+                      6:00 AM
                     </div>
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-200">
-                    6:00 AM
-                  </div>
-                </div>
+                </Link>
               </li>
               <li className="flex flex-row">
-                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div className="flex flex-col items-center justify-center mr-4">
-                    <Avatar
-                      name="Kent Dodds"
-                      src="https://bit.ly/kent-c-dodds"
-                    />
-                  </div>
-                  <div className="flex-1 pl-1 mr-16">
-                    <div className="font-medium dark:text-white">CEO</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
-                      Marine Jeanne
+                <Link href="/messages">
+                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                    <div className="flex flex-col items-center justify-center mr-4">
+                      <Avatar
+                        name="Kent Dodds"
+                        src="https://bit.ly/kent-c-dodds"
+                      />
+                    </div>
+                    <div className="flex-1 pl-1 mr-16">
+                      <div className="font-medium dark:text-white">CEO</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-200">
+                        Marine Jeanne
+                      </div>
+                    </div>
+                    <div className="text-xs text-gray-600 dark:text-gray-200">
+                      6:00 AM
                     </div>
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-200">
-                    6:00 AM
-                  </div>
-                </div>
+                </Link>
               </li>
               <li className="flex flex-row">
-                <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                  <div className="flex flex-col items-center justify-center mr-4">
-                    <Avatar
-                      name="Ryan Florence"
-                      src="https://bit.ly/ryan-florence"
-                    />
-                  </div>
-                  <div className="flex-1 pl-1 mr-16">
-                    <div className="font-medium dark:text-white">CTO</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-200">
-                      Boby PArk
+                <Link href="/messages">
+                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                    <div className="flex flex-col items-center justify-center mr-4">
+                      <Avatar
+                        name="Ryan Florence"
+                        src="https://bit.ly/ryan-florence"
+                      />
+                    </div>
+                    <div className="flex-1 pl-1 mr-16">
+                      <div className="font-medium dark:text-white">CTO</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-200">
+                        Boby PArk
+                      </div>
+                    </div>
+                    <div className="text-xs text-gray-600 dark:text-gray-200">
+                      6:00 AM
                     </div>
                   </div>
-                  <div className="text-xs text-gray-600 dark:text-gray-200">
-                    6:00 AM
-                  </div>
-                </div>
+                </Link>
               </li>
             </ul>
           </div>

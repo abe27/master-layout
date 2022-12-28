@@ -1,6 +1,13 @@
 import { Avatar } from "@chakra-ui/react";
 import Link from "next/link";
 
+const userMessage = [
+  { id: 1, name: "Jean", last: "Marc", position: "Developer", on: "6.00 AM" },
+  { id: 2, name: "John", last: "Snow", position: "Designer", on: "9.30 PM" },
+  { id: 3, name: "Charlie", last: "Moi", position: "CTO", on: "10.00 PM" },
+  { id: 4, name: "Boby", last: "Park", position: "CEO", on: "10.10 PM" },
+];
+
 const Notification = () => {
   return (
     <div className="dropdown dropdown-end">
@@ -32,94 +39,31 @@ const Notification = () => {
         <div className="card-body">
           <div className="container flex flex-col items-center justify-center w-full mx-auto">
             <ul className="flex flex-col divide-y divide w-72">
-              <li className="flex flex-row">
-                <Link href="/messages">
-                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                    <div className="flex flex-col items-center justify-center mr-4">
-                      <Avatar
-                        name="Dan Abrahmov"
-                        src="https://bit.ly/dan-abramov"
-                      />
-                    </div>
-                    <div className="flex-1 pl-1 mr-16">
-                      <div className="font-medium dark:text-white">
-                        Jean Marc
+              {userMessage.map((i) => (
+                <li className="flex flex-row" key={i.id}>
+                  <Link href={`/messages/${i.id}`}>
+                    <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                      <div className="flex flex-col items-center justify-center mr-4">
+                        <Avatar
+                          name={`${i.name} ${i.last}`}
+                          src={`https://placeimg.com/80/80/${i.name}`}
+                        />
                       </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-200">
-                        Developer
+                      <div className="flex-1 pl-1 mr-16">
+                        <div className="font-medium dark:text-white">
+                          {`${i.name} ${i.last}`}
+                        </div>
+                        <div className="text-sm text-gray-600 dark:text-gray-200">
+                          {i.position}
+                        </div>
                       </div>
-                    </div>
-                    <div className="text-xs text-gray-600 dark:text-gray-200">
-                      6:00 AM
-                    </div>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex flex-row">
-                <Link href="/messages">
-                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                    <div className="flex flex-col items-center justify-center mr-4">
-                      <Avatar
-                        name="Kola Tioluwani"
-                        src="https://bit.ly/tioluwani-kolawole"
-                      />
-                    </div>
-                    <div className="flex-1 pl-1 mr-16">
-                      <div className="font-medium dark:text-white">
-                        Designer
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-200">
-                        Charlie Moi
+                      <div className="text-xs text-gray-600 dark:text-gray-200">
+                        {i.on}
                       </div>
                     </div>
-                    <div className="text-xs text-gray-600 dark:text-gray-200">
-                      6:00 AM
-                    </div>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex flex-row">
-                <Link href="/messages">
-                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                    <div className="flex flex-col items-center justify-center mr-4">
-                      <Avatar
-                        name="Kent Dodds"
-                        src="https://bit.ly/kent-c-dodds"
-                      />
-                    </div>
-                    <div className="flex-1 pl-1 mr-16">
-                      <div className="font-medium dark:text-white">CEO</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-200">
-                        Marine Jeanne
-                      </div>
-                    </div>
-                    <div className="text-xs text-gray-600 dark:text-gray-200">
-                      6:00 AM
-                    </div>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex flex-row">
-                <Link href="/messages">
-                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
-                    <div className="flex flex-col items-center justify-center mr-4">
-                      <Avatar
-                        name="Ryan Florence"
-                        src="https://bit.ly/ryan-florence"
-                      />
-                    </div>
-                    <div className="flex-1 pl-1 mr-16">
-                      <div className="font-medium dark:text-white">CTO</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-200">
-                        Boby Park
-                      </div>
-                    </div>
-                    <div className="text-xs text-gray-600 dark:text-gray-200">
-                      6:00 AM
-                    </div>
-                  </div>
-                </Link>
-              </li>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
